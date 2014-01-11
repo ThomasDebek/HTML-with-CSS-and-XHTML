@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+    <title>Kafeteria Świat Kaw - Ziarnotron</title>
+  </head>
+  <body>
+
+    <h1>Kafeteria Świat Kaw - Ziarnotron</h1>
+    <h2>Wypełnij poniższy formularz i kliknij przycisk, aby złożyć zamówienie</h2>
+    
+<form action="zamowienie.php" Xaction="http://przyklady.helion.pl/hfhtcs/zamowienie.php" method="get">
+  <p>Wybierz gatunek ziaren kawy: 
+    <select name="gatunek">
+      <option value="Mieszanka">Mieszanka firmowa</option>
+      <option value="Boliwia">Boliwijskie ziarna Supremo Shade</option>
+      <option value="Gwatemala">Ziarna z Gwatemali</option>
+      <option value="Kenia">Ziarna z Kenii</option>
+    </select>
+  </p>
+  <p>Typ <br />
+    <input type="radio" name="typziaren" value="ziarna" /> Całe ziarna <br />
+    <input type="radio" name="typziaren" value="mielona" checked="checked" /> Mielone
+  </p>
+  
+  <p>Dodatki <br />
+    <input type="checkbox" name="dodatki[]" value="opakowanie" /> 
+        Ozdobne opakowanie <br />
+    <input type="checkbox" name="dodatki[]" value="katalog" checked="checked" />
+        Dołączyć katalog do zamówienia <br />
+  </p>
+  
+  <p>Adres wysyłki: <br />
+    Imię i nazwisko: <input type="text" name="personalia" /> <br />
+    Adres: <input type="text" name="adres" /> <br />
+    Miejscowość: <input type="text" name="miejscowosc" />	<br />
+    Województwo: <input type="text" name="wojewodztwo" />	<br />
+    Kod pocztowy: <input type="text" name="kodpocztowy" /> <br />
+  </p>
+  
+  <p>Komentarz klienta <br />
+    <textarea name="komentarz" rows="10" cols="48"></textarea>
+  </p>
+  
+  <p>
+    <input type="submit" value="Zamawiam" />
+  </p>
+</form>
+
+  </body>
+</html>
+
