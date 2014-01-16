@@ -35,4 +35,32 @@ h2 {
     border-width: thin;
     border-style: solid;
     border-color: red;
+    width: 300px;
+
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    margin-left: 20px;
+
+    text-align: center;
+
+    background-image: url(obrazy/koktajl.gif);
+    background-repeat: repeat-x;
+
+    line-height: 1em;
+}
+
+#drinki h2 {
+    color: black;
+}
+#drinki h3 {
+    color: #00008B;
+}
+
+.cd {
+    font-style: italic
+}
+.artysta {
+    font-weight: bold;
 }
