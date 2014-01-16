@@ -74,3 +74,14 @@ a:visited {
 a:hover {
     color: yellow;
 }
+
+#drinki a:link {
+    color: #007e73;
+}
+#drinki a:visited {
+    color: #333333;
+}
+#drinki a:hover {
+    background: #f88396;
+    color: #0d5353;
+}
