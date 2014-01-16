@@ -12,10 +12,12 @@ h1 {
 h2 {
     font-size: 130%
 }
-.gwarancja {
+#gwarancja {
     border-color: black;
     border-width: 1px;
     border-style: dotted;
+
+
     background-color: #a7cece;
     padding: 25px;
     padding-right: 250;
@@ -23,4 +25,8 @@ h2 {
     background-image: url(obrazy/tlo.gif);
     background-repeat: no-repeat;
     background-position: top left;
+}
+
+p#stopka {
+    color: deeppink;
 }
