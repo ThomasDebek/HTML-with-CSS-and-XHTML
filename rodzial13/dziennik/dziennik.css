@@ -21,12 +21,14 @@ table {
     margin-left: 20px;
     margin-right: 20px;
     border: thin solid black;
-    caption-style: bottom;
+    caption-side: bottom;
+    border-collapse: collapse;
 }
 
 td, th {
     border: thin dotted gray;
     padding: 5px;
+    background-color: #cc6600;
 }
 
 caption {
