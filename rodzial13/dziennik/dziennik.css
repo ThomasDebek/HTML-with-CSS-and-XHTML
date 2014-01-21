@@ -39,3 +39,7 @@ caption {
 .kolorkomurek {
     background-color: #fcba7a;
 }
+
+table table th {
+    background-color: white;
+}
