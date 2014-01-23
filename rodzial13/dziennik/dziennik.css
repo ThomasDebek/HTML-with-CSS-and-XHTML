@@ -43,3 +43,7 @@ caption {
 table table th {
     background-color: white;
 }
+
+li {
+    list-style-type: disc;
+}
