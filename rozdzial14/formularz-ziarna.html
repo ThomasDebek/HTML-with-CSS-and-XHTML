@@ -10,13 +10,18 @@
         <h2>Wypelnij poni¿szy formularz i klikinij przycisk, aby zlo¿yc zamówienie</h2>
 
         <form action="http://przyklady.helion.pl/hfhtcs/zamowienie.php" method="POST">
-          <p>Wybierz gatunek ziaren kawy:
+          <p>Wybierz gatunek ziaren kawy: </br>
             <select name="gatunek">
                 <option value="Mieszanka">Mieszanka firmowa</option>
                 <option value="Boliwia">Boliwiejskie ziarna Supermo Shade</option>
                 <option value="Gwatemala">Ziarna z Gwatemali</option>
                 <option value="Kenia">Ziarna z Kenii</option>
             </select>
+          </p>
+
+          <p>Wybierz Typ ziaren kawy: </br>
+            <input type="radio" name="typziaren" value="ziarna" /> Cale ziarna <br />
+            <input type="radio" name="typziaren" value="mielone" /> Mielone
           </p>
 
 
