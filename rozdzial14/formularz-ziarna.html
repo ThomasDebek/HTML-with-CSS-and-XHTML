@@ -1,50 +1,90 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
- <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2"/>
     <title>Kafeteria Swiat Kaw - Ziarnaton</title>
- </head>
-    <body>
-        <h1>Kafeteria Swita Kaw - Ziarnaton</h1>
-        <h2>Wypelnij poniższy formularz i klikinij przycisk, aby zlożyc zamówienie</h2>
+</head>
+<body>
+<h1>Kafeteria Swita Kaw - Ziarnaton</h1>
 
-        <form action="http://przyklady.helion.pl/hfhtcs/zamowienie.php" method="POST">
-          <p>Wybierz gatunek ziaren kawy: </br>
-            <select name="gatunek">
-                <option value="Mieszanka">Mieszanka firmowa</option>
-                <option value="Boliwia">Boliwiejskie ziarna Supermo Shade</option>
-                <option value="Gwatemala">Ziarna z Gwatemali</option>
-                <option value="Kenia">Ziarna z Kenii</option>
-            </select>
-          </p>
+<h2>Wypelnij poniższy formularz i klikinij przycisk, aby zlożyc zamówienie</h2>
 
-          <p>Wybierz Typ ziaren kawy: </br>
-            <input type="radio" name="typziaren" value="ziarna" /> Cale ziarna <br />
-            <input type="radio" name="typziaren" value="mielone" /> Mielone
-          </p>
+<form action="http://przyklady.helion.pl/hfhtcs/zamowienie.php" method="POST">
+    <table>
+        <tr>
+            <th>Wybierz gatunek ziaren kawy:</th>
+            <td>
+                <select name="gatunek">
+                    <option value="Mieszanka">Mieszanka firmowa</option>
+                    <option value="Boliwia">Boliwiejskie ziarna Supermo Shade</option>
+                    <option value="Gwatemala">Ziarna z Gwatemali</option>
+                    <option value="Kenia">Ziarna z Kenii</option>
+                </select>
+            </td>
+        </tr>
 
-          <p>Dodatki <br />
-            <input type="checkbox" name="dodatki[]" value="opakowanie">Ozdobne opakowanie <br />
-            <input type="checkbox" name="dodatki[]" value="katalog" checked="checked">Dolączyc katalog do zamówienia <br />
-          </p>
+        <tr>
+            <th>Wybierz Typ ziaren kawy:</th>
+            <td>
+                <input type="radio" name="typziaren" value="ziarna"/> Cale ziarna <br/>
+                <input type="radio" name="typziaren" value="mielone"/> Mielone
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <th>Dodatki</th>
+                <input type="checkbox" name="dodatki[]" value="opakowanie">Ozdobne opakowanie <br/>
+                <input type="checkbox" name="dodatki[]" value="katalog" checked="checked">Dolączyc katalog do zamówienia
+                <br/>
+            </td>
+        </tr>
+
+        <tr>
+          <th>Adres wyslylki: </th>
+             <td>
+                <table>
+                    <tr>
+                        <td>Imie i nazwisko: </td>
+                        <td><input type="text" name="personalia"/> </td>
+                    </tr>
+                    <tr>
+                        <td>Adres: </td>
+                        <td><input type="text" name="adres"/> </td>
+                    </tr>
+                    <tr>
+                        <td> Miejscowsc:</td>
+                        <td><input type="text" name="miejescowosc"/></td>
+                    </tr>
+                    <tr>
+                        <td> Wojewodzctwo:</td>
+                        <td><input type="text" name="wojewodztwo"/></td>
+                    </tr>
+                    <tr>
+                        <td>Kod pocztowy: </td>
+                        <td><input type="text" name="kodpocztowy"/> </td>
+                    </tr>
+                </table>
+             </td>
+           </th>
+        </tr>
 
 
 
+        <tr>
+            <th>Komentarz klienta :</th>
+            <td><textarea name="komentarz" rows="10" cols="48"></textarea></td>
+        </tr>
 
-          <p>Adres wyslylki: <br />
-            Imie i nazwisko: <input type="text" name="personalia"/> <br />
-            Adres: <input type="text" name="adres"/> <br />
-            Miejscowsc: <input type="text" name="miejescowosc" /> <br />
-            Wojewodzctwo: <input type="text" name="wojewodztwo" /> <br />
-            Kod pocztowy: <input type="text" name="kodpocztowy" /> <br />
-          </p>
-          <p>Komentarz klienta <br />
-              <textarea name="komentarz" rows="10" cols="48"></textarea>
-          </p>
-            <p>
-                <input type="submit" value="Zamawiam" />
-            </p>
-        </form>
-    </body>
+        <tr>
+            <th>
+                <td><input type="submit" value="Zamawiam"/></td>
+            </th>
+        </tr>
+
+    </table>
+
+</form>
+</body>
 </html>
